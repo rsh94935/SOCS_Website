@@ -1,0 +1,248 @@
+/* You can add global styles to this file, and also import other style files */
+a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: black;
+}
+.a2{
+	text-decoration: none;
+	text-align: center;
+	display: inline;
+	color: rgb(0, 0, 156);
+}
+.spacer{
+	width: 1%
+}
+.menu{
+	width: 14%;
+	background-color: transparent;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+.menuSelected{
+	width: 14%;
+	background-color: #33adff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+.image{
+	width: 30%;
+}
+.imageConcert{
+	width: 50%;
+	min-width: 200px;
+}
+.concertSpacer{
+	width: 25%;
+}
+.text{
+	width: 70%;
+	vertical-align: middle;
+}
+.galleryText{
+	width: 70%;
+	display: block;
+}
+.divText{
+	width: 100%;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 153, 255, 0.7);
+}
+.background123{
+	 background-image: url("assets/images/background.png");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-size: 100% 100%;
+	 padding: 0;
+	 margin: 0;
+	 box-shadow: 0px 10000px rgba(102,217,255,0.5) inset;
+}
+.background{
+	 background-image: url("assets/images/backgroundv2.jpg");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-size: 100% 100%;
+	 padding: 0;
+	 margin: 0;
+	 box-shadow: 0px 10000px rgba(102,217,255,0.5) inset;
+}
+.backgrounds{
+	 background-image: url("assets/images/background.png");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-size: 100% 100%;
+	 padding: 0;
+	 margin: 0;
+}
+.dropdownhide{
+	position: absolute;
+	display: none;
+}
+.dropdownshow{
+	position: absolute;
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+	background-color: #0099ff;
+}
+.image1{
+	height: 100px;
+	width: 100px;
+	display: block;
+}
+.image2{
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.image3{
+	display: block;
+	height: auto;
+	width: 100%;
+}
+.image4{
+	display: block;
+	height: auto;
+	width: 100px;
+}
+.fbLink{
+	position: fixed;
+	margin-left: 10px;
+}
+.header{
+	background-color: #0099ff;
+	
+}
+.headerp{
+	text-align: center;
+	vertical-align: middle;
+}
+.link{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #0099ff;
+}
+.linkSelected{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #33adff;
+}
+.selectedImage{
+	width: 350px;
+	height: 496px;
+}
+.galleryImage{
+	width: auto;
+	height: 200px;
+}
+p{
+	color: black;
+	font-size: 110%;
+	font-family: Arial;
+}
+h3{
+	color: black;
+	font-size: 130%;
+	text-align: center;
+}
+h4{
+	color: black;
+	text-align: center;
+}
+.spacer{
+	height: 20px;
+}
+tr{
+	vertical-align: top;
+}
+span{
+	font-size: 110%;
+}
+.input{
+ font-size: 16px;
+ padding: 6px 10px 6px 10px;
+ border: 1px solid #ddd;
+}
+
+.btnArch{
+	width: 25%;
+	text-align: center;
+}
+
+.close{
+	float: right;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	margin-top: -5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.close:hover{
+	background-color: darkgray;
+}
+
+.modalEmail{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 10px;
+}
+
+.modalEmailContent{
+    background-color: #fefefe;
+    margin: 5% auto auto auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+	width: 50%; /* Could be more or less, depending on screen size */
+	min-width: 500px;
+}
+
+.emailContainer {
+	padding: 15px;
+}
+
+.emailContainer input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.emailContainer input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.emailFormHeader {
+	height: 35px;
+	width: calc(100% - 10px);
+	background-color: gray;
+	color: white;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
