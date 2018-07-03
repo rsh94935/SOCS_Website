@@ -1,0 +1,115 @@
+<table style="width: 100%;">
+  <tr>
+    <td style="width:15%; position: fixed;">
+      <table>
+        <tr>
+          <td>
+            <img src="assets/images/logo2.png" class="image2">
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/welcome" id="menuWelcome" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Welcome</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/concerts" id="menuConcerts" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Concerts</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/chairman" id="menuChairman" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Chairman</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/musicdir" id="menuMusicDir" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Musical Director</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/members" id="menuMembers" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Members</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/musicLib" id="menuMusicLib" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Music Library</a>
+          </td>
+        </tr>
+        <tr>
+          <td routerLink="/archive" id="archive" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+            <a>Archive</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td style="width:70%;">
+          <router-outlet></router-outlet>
+    </td>
+    <td style="text-align: center; width:15%; position: fixed;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="text-align: center;">
+            <div style="width: 100px; margin: auto;">
+              <br>
+              <a href="https://www.facebook.com/Sittingbourne.Orpheus/"><img src="assets/images/facebook.png" class="image1"></a>
+              <br>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <div style="width: 100px; margin: auto;">
+              <a href="https://twitter.com/sittingbournech"><img src="assets/images/twitter.png" class="image1"></a>
+              <br>
+            </div>	
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <div style="width: 100px; margin: auto;">
+              <!--<img src="assets/images/email.png" class="image1" href="mailto:socs.webmail@gmail.com">-->
+              <img src="assets/images/email.png" style="cursor: pointer;" class="image1" (click)="modalActive()">
+              <br>
+            </div>	
+          </td>
+        </tr>
+        <!--<tr>
+          <td style="text-align: center;">
+            <p>Our next concert:</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width: 100px; margin: auto;">
+              <a routerLink="/concerts"><img src="assets/images/concerts/concertposter.jpg" class="image4"></a>
+            </div>
+          </td>
+        </tr>-->
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="modalEmail" id="emailUs">
+  <form (submit)="sendEmail(message)" class="modalEmailContent">
+    <div>
+      <div class="emailFormHeader">
+        <label style="margin-top: 5px;"><b>Email us:</b></label>
+        <span onclick="document.getElementById('emailUs').style.display='none'" class="close" title="Close"><b>&times;</b></span>
+      </div>
+      <div class="emailContainer">
+        <label for="name"><b>Subject</b></label>
+        <input type="text" placeholder="Email subject" name="name" [(ngModel)]="message.subject" required>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="John Smith" name="name" [(ngModel)]="message.name" required>
+        <label for="emailAdd"><b>Email address</b></label>
+        <input type="text" placeholder="someone@email.co.uk" name="email" [(ngModel)]="message.email">
+        <label for="comment"><b>Comment</b></label>
+        <br>
+        <textarea placeholder="Enter message here..." name="message" style="width: 100%;" rows="12"[(ngModel)]="message.message" required></textarea>
+        <input type="submit" value="Send" onclick="document.getElementById('emailUs').style.display='none'">
+      </div>
+    </div>
+  </form>
+</div>

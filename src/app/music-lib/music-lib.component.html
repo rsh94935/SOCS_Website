@@ -1,0 +1,65 @@
+<table>
+    <tr>
+      <td><img src="assets/images/banner.jpg" class="image2">
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <br>
+        <h1><span>MUSIC HIRE LIBRARY</span></h1>
+      </td>
+    </tr>
+    <tr class="spacer">
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>
+              <img src="assets/images/welcome/choir.jpg" class="image2">
+            </td>
+            <td class="text">
+              <h3>Music Library</h3>
+              <p>We have an extensive library containing many popular Choral Works, all of which are available for hire.</p>
+              <p>If your group would like to hire any of the listed works please contact our librarian on e-mail: <a class="a2" (click)="modalActiveMusicHire()">socs.musichire@gmail.com</a>, and we will provide details of hire arrangements and costs.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="spacer">
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+          <p-dataTable [rows]="10" [value]="songList" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[5,10,20]">
+            <p-column field="composer" header="Composer" filter="true" filterMatchMode="contains" sortable="true"></p-column>
+            <p-column field="song" header="Song" filter="true" filterMatchMode="contains" sortable="true"></p-column>
+            <p-column field="count" header="Count" sortable="true"></p-column>
+          </p-dataTable>
+      </td>
+    </tr>
+  </table>
+  <div class="modalEmail" id="emailMusicHire">
+    <form (submit)="sendEmail(message)" class="modalEmailContent">
+      <div>
+        <div class="emailFormHeader">
+          <label style="margin-top: 5px;"><b>Email us:</b></label>
+          <span onclick="document.getElementById('emailMusicHire').style.display='none'" class="close" title="Close"><b>&times;</b></span>
+        </div>
+        <div class="emailContainer">
+          <label for="name"><b>Subject</b></label>
+          <input type="text" placeholder="Email subject" name="name" [(ngModel)]="message.subject" required>
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="John Smith" name="name" [(ngModel)]="message.name" required>
+          <label for="emailAdd"><b>Email address</b></label>
+          <input type="text" placeholder="someone@email.co.uk" name="email" [(ngModel)]="message.email">
+          <label for="comment"><b>Comment</b></label>
+          <br>
+          <textarea placeholder="Enter message here..." name="message" style="width: 100%;" rows="12"[(ngModel)]="message.message" required></textarea>
+          <input type="submit" value="Send" onclick="document.getElementById('emailMusicHire').style.display='none'">
+        </div>
+      </div>
+    </form>
+  </div>
