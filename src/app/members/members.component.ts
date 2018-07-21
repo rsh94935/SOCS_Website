@@ -80,7 +80,11 @@ export class MembersComponent implements OnInit {
         "start": "2018-07-03"
       },
       {
-        "title": "July Summer Super Concert",
+        "title": "July Summer",
+        "start": "2018-07-07"
+      },
+      {
+        "title": "Super Concert",
         "start": "2018-07-07"
       },
       {
@@ -112,7 +116,11 @@ export class MembersComponent implements OnInit {
         "start": "2018-10-02"
       },
       {
-        "title": "Choir Practice at Fulston 1300 to 1700",
+        "title": "Choir Practice",
+        "start": "2018-10-13"
+      },
+      {
+        "title": "Fulston 1pm - 5pm",
         "start": "2018-10-13"
       },
       {
@@ -124,11 +132,19 @@ export class MembersComponent implements OnInit {
         "start": "2018-10-16"
       },
       {
-        "title": "Choir Practice at Fulston 1300 to 1700",
+        "title": "Choir Practice",
         "start": "2018-10-21"
       },
       {
-        "title": "Choir Practice - venue to be booked",
+        "title": "Fulston 1pm - 5pm",
+        "start": "2018-10-21"
+      },
+      {
+        "title": "Choir Practice",
+        "start": "2018-10-23"
+      },
+      {
+        "title": "Venue not booked",
         "start": "2018-10-23"
       },
       {
@@ -140,7 +156,15 @@ export class MembersComponent implements OnInit {
         "start": "2018-11-06"
       },
       {
-        "title": "Commemorative Concert at the Swallows 7:30pm",
+        "title": "Commemorative",
+        "start": "2018-11-10"
+      },
+      {
+        "title": "Concert",
+        "start": "2018-11-10"
+      },
+      {
+        "title": "Swallows 7:30pm",
         "start": "2018-11-10"
       },
       {
