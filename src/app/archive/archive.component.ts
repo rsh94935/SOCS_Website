@@ -21,6 +21,24 @@ export class Archive implements OnInit {
   images90s: any[];
   images00s: any[];
   images10s: any[];
+  chairmen40s: any[];
+  chairmen50s: any[];
+  chairmen60s: any[];
+  chairmen70s: any[];
+  chairmen80s: any[];
+  chairmen90s: any[];
+  chairmen00s: any[];
+  chairmen10s: any[];
+  musicDirs40s: any[];
+  musicDirs50s: any[];
+  musicDirs60s: any[];
+  musicDirs70s: any[];
+  musicDirs80s: any[];
+  musicDirs90s: any[];
+  musicDirs00s: any[];
+  musicDirs10s: any[];
+  chairmen: any[];
+  musicDirs: any[];
 
   ngOnInit() {
     this.images = [];
@@ -110,53 +128,89 @@ export class Archive implements OnInit {
       {src:'assets/images/10s/SOCSChristmasConcertPoster2016_Draft2.png', thumbnail:'assets/images/10s/SOCSChristmasConcertPoster2016_Draft2.png', text:"Poster of 2016 Christmas Concert."},
       {src:'assets/images/10s/SOCSChristmasPoster2017.jpg', thumbnail:'assets/images/10s/SOCSChristmasPoster2017.jpg', text:"Poster of 2017 Christmas Concert."},
       {src:'assets/images/10s/concertposterApril2018.jpg', thumbnail:'assets/images/10s/concertposterApril2018.jpg', text:"Poster of 2018 Spring Concert."},
+      {src:'assets/images/10s/LestWeForgetA5FinalPoster.jpg', thumbnail:'assets/images/10s/LestWeForgetA5FinalPoster.jpg', text:"Poster of 2018 Lest we forget Concert."},
+      {src:'assets/images/10s/SOCSHandelFavouritesConcertPosterii.jpg', thumbnail:'assets/images/10s/SOCSHandelFavouritesConcertPosterii.jpg', text:"Poster of 2019 Spring Concert."},
     ]
     this.images = this.images40s;
     this.gallery.load(this.images);
+    this.chairmen40s = ['Mr W J Peacock 1944', 'Unknown 1945-46', 'Mr F W Clarke 1947-58'];
+    this.musicDirs40s = ['Mr Frederick Tolhurst 1944-61'];
+    this.chairmen50s = ['Mr F W Clarke 1947-58'];
+    this.musicDirs50s = ['Mr Frederick Tolhurst 1944-61'];
+    this.chairmen60s = ['Mrs M Underdown 1959-63', 'Unknown 1963-64', 'Mr J C Felton 1965-68', 'Not known 1968-72'];
+    this.musicDirs60s = ['Mr Frederick Tolhurst 1944-61', 'Mr Trevor Webb 1964', 'Mr Edwin Sloan 1965-84'];
+    this.chairmen70s = ['Not known 1968-72', 'Mr S Brown 1972-73', 'Mrs E Hill 1973-78', 'Mr P Leverton 1978-80'];
+    this.musicDirs70s = ['Mr Edwin Sloan 1965-84'];
+    this.chairmen80s = ['Mrs A Ryback 1980-82', 'Mr I Sheffield 1982-84', 'Mr D Gable 1984-86', 'Mrs A Bearne 1982-88', 'Mr G Broughton 1988-92'];
+    this.musicDirs80s = ['Mr Edwin Sloan 1965-84', 'Mr Ray Jones 1985-2004'];
+    this.chairmen90s = ['Mr G Broughton 1988-92', 'Mr A New 1992-94', 'Mrs S Potter 1994-98', 'Mr John Taylor 1998 - 2001'];
+    this.musicDirs90s = ['Mr Ray Jones 1985-2004'];
+    this.chairmen00s = ['Mr John Taylor 1998-2001', 'Mr Ken Fulton 2001-04', 'Mrs Julie Burns 2004-09'];
+    this.musicDirs00s = ['Mr Ray Jones 1985-2004', 'Mr Michael Downes 2005-06', 'Mr Andrew Lowen 2007-2018'];
+    this.chairmen10s = ['Miss Dot Mill 2009-13', 'Mr Brian Jemmett 2013 - 2019'];
+    this.musicDirs10s = ['Mr Andrew Lowen 2007 - 2018', 'George Salmon 2018 - '];
+    this.chairmen = this.chairmen40s;
+    this.musicDirs = this.musicDirs40s;
   }
 
   go40(){
     this.images = this.images40s;
+    this.chairmen = this.chairmen40s;
+    this.musicDirs = this.musicDirs40s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
 
   go50(){
     this.images = this.images50s;
+    this.chairmen = this.chairmen50s;
+    this.musicDirs = this.musicDirs50s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
 
   go60(){
     this.images = this.images60s;
+    this.chairmen = this.chairmen60s;
+    this.musicDirs = this.musicDirs60s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
   go70(){
     this.images = this.images70s;
+    this.chairmen = this.chairmen70s;
+    this.musicDirs = this.musicDirs70s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
   go80(){
     this.images = this.images80s;
+    this.chairmen = this.chairmen80s;
+    this.musicDirs = this.musicDirs80s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
 
   go90(){
     this.images = this.images90s;
+    this.chairmen = this.chairmen90s;
+    this.musicDirs = this.musicDirs90s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
 
   go00(){
     this.images = this.images00s;
+    this.chairmen = this.chairmen00s;
+    this.musicDirs = this.musicDirs00s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }
 
   go10(){
     this.images = this.images10s;
+    this.chairmen = this.chairmen10s;
+    this.musicDirs = this.musicDirs10s;
     this.gallery.load(this.images);
     this.gallery.set(0);
   }

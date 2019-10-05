@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import {DataTableModule} from 'primeng/datatable';
 import {GalleriaModule} from 'primeng/galleria';
+import {CarouselModule} from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -47,7 +48,8 @@ import * as jQuery from 'jquery';
     GalleryModule.forRoot(),
     TableModule,
     ScheduleModule,
-    HttpModule
+    HttpModule,
+    CarouselModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, EmailService],
   bootstrap: [AppComponent]

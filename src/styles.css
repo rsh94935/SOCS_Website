@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html,body {
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+  }
 a{
 	text-decoration: none;
 	text-align: center;
@@ -15,7 +21,7 @@ a{
 	width: 1%
 }
 .menu{
-	width: 14%;
+	/* width: 14%; */
 	background-color: transparent;
 	margin: 0;
 	padding-top: 20px;
@@ -24,7 +30,7 @@ a{
 	cursor: pointer;
 }
 .menuSelected{
-	width: 14%;
+	/* width: 14%; */
 	background-color: #33adff;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -145,12 +151,20 @@ a{
 }
 p{
 	color: black;
-	font-size: 110%;
+	font-size: 18px;
 	font-family: Arial;
+}
+li {
+	color: black;
+	font-size: 18px;
+	font-family: Arial;
+}
+h1{
+	font-size: 28px !important;
 }
 h3{
 	color: black;
-	font-size: 130%;
+	font-size: 24px !important;
 	text-align: center;
 }
 h4{
@@ -162,9 +176,6 @@ h4{
 }
 tr{
 	vertical-align: top;
-}
-span{
-	font-size: 110%;
 }
 .input{
  font-size: 16px;

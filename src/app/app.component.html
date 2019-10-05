@@ -1,96 +1,58 @@
-<table style="width: 100%;">
-  <tr>
-    <td style="width:15%; position: fixed;">
-      <table>
-        <tr>
-          <td>
-            <img src="assets/images/logo2.png" class="image2">
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/welcome" id="menuWelcome" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Welcome</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/concerts" id="menuConcerts" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Concerts</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/chairman" id="menuChairman" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Chairman</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/musicdir" id="menuMusicDir" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Musical Director</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/members" id="menuMembers" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Members</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/musicLib" id="menuMusicLib" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Music Library</a>
-          </td>
-        </tr>
-        <tr>
-          <td routerLink="/archive" id="archive" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
-            <a>Archive</a>
-          </td>
-        </tr>
-      </table>
-    </td>
-    <td style="width:70%;">
-          <router-outlet></router-outlet>
-    </td>
-    <td style="text-align: center; width:15%; position: fixed;">
-      <table style="width: 100%;">
-        <tr>
-          <td style="text-align: center;">
-            <div style="width: 100px; margin: auto;">
-              <br>
-              <a href="https://www.facebook.com/Sittingbourne.Orpheus/"><img src="assets/images/facebook.png" class="image1"></a>
-              <br>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">
-            <div style="width: 100px; margin: auto;">
-              <a href="https://twitter.com/sittingbournech"><img src="assets/images/twitter.png" class="image1"></a>
-              <br>
-            </div>	
-          </td>
-        </tr>
-        <tr>
-          <td style="text-align: center;">
-            <div style="width: 100px; margin: auto;">
-              <!--<img src="assets/images/email.png" class="image1" href="mailto:socs.webmail@gmail.com">-->
-              <img src="assets/images/email.png" style="cursor: pointer;" class="image1" (click)="modalActive()">
-              <br>
-            </div>	
-          </td>
-        </tr>
-        <!--<tr>
-          <td style="text-align: center;">
-            <p>Our next concert:</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div style="width: 100px; margin: auto;">
-              <a routerLink="/concerts"><img src="assets/images/concerts/concertposter.jpg" class="image4"></a>
-            </div>
-          </td>
-        </tr>-->
-      </table>
-    </td>
-  </tr>
-</table>
+<div style="display: grid; grid-template-columns: 200px 1fr 200px; grid-template-rows: 1fr; width: 100%;">
+  <div>
+    <div style="display: grid; grid-template-columns: 1fr; grid-template-rows: 200px repeat(7, 60px); position: fixed;">
+      <div>
+        <img src="assets/images/logo2.png" class="image2">
+      </div>
+      <div routerLink="/welcome" id="menuWelcome" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Welcome</a>
+      </div>
+      <div routerLink="/concerts" id="menuConcerts" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Concerts</a>
+      </div>
+      <div routerLink="/chairman" id="menuChairman" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Chairman</a>
+      </div>
+      <div routerLink="/musicdir" id="menuMusicDir" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Musical Director</a>
+      </div>
+      <div routerLink="/members" id="menuMembers" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Members</a>
+      </div>
+      <div routerLink="/musicLib" id="menuMusicLib" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Music Library</a>
+      </div>
+      <div routerLink="/archive" id="archive" class="menu" onmouseover="functions.hoverMenu(this.id)" onmouseleave="functions.unHoverMenu(this.id)">
+        <a>Archive</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div>
+    <div style="position: fixed;">
+      <div style="width: 100px; margin: auto;">
+        <br>
+        <a href="https://www.facebook.com/Sittingbourne.Orpheus/"><img src="assets/images/facebook.png" class="image1"></a>
+        <br>
+      </div>
+      <div style="width: 100px; margin: auto;">
+        <a href="https://twitter.com/sittingbournech"><img src="assets/images/twitter.png" class="image1"></a>
+        <br>
+      </div>
+      <div style="width: 100px; margin: auto;">
+        <!--<img src="assets/images/email.png" class="image1" href="mailto:socs.webmail@gmail.com">-->
+        <img src="assets/images/email.png" style="cursor: pointer;" class="image1" (click)="modalActive()">
+        <br>
+      </div>
+      <div style="width: 100px; margin: auto;">
+        <p>Our next concert:</p>
+        <a routerLink="/concerts"><img src="assets/images/concerts/2019Nov.jpg" class="image4"></a>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modalEmail" id="emailUs">
   <form (submit)="sendEmail(message)" class="modalEmailContent">
     <div>

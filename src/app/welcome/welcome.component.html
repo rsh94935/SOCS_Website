@@ -1,4 +1,4 @@
-<table>
+<!-- <table>
   <tr>
     <td><img src="assets/images/banner.jpg" class="image2">
     </td>
@@ -14,14 +14,11 @@
   </tr>
   <tr>
     <td>
-      <table>
+      <table style="width: 100%;">
         <tr>
           <td>
-            <img src="assets/images/welcome/ChoirWithOrchestra.JPG" class="image2">
-          </td>
-          <td class="text">
             <h3>Welcome to our website</h3>
-            <p>We are a Choral Society located in Sittingbourne, Kent, England, with around 90 active members. We meet weekly on Tuesday evenings to rehearse in preparation for our three major concerts each year. Our repertoire ranges from classical through to more contemporary styles. We formed in 1945 and the history page gives information on most of our performances since then.</p>
+            <p>This site is under review and being updated.</p>
           </td>
         </tr>
       </table>
@@ -32,13 +29,10 @@
   </tr>
   <tr>
     <td>
-      <table>
+      <table style="width: 100%;">
         <tr>
-          <td class="image">
-            <img src="assets/images/welcome/IMG_3659.JPG" class="image2">
-          </td>
-          <td class="text">
-            <p>All of our income is derived from members' subscriptions, ticket sales and fund raising activities. Our members are active in the local community, singing at various events throughout the year, such as charity carol singing and weddings.</p>
+          <td>
+            <p>As audience members who attend our concerts regularly any feedback that you have is appreciated.</p>
           </td>
         </tr>
       </table>
@@ -49,16 +43,36 @@
   </tr>
   <tr>
     <td>
-      <table>
+      <table style="width: 100%;">
         <tr>
-          <td class="image">
-            <img src="assets/images/welcome/img1.jpg" class="image2">
-          </td>
-          <td class="text">
-            <p>We welcome new members, without audition, and will be pleased to hear from anyone interested in joining (see our Chairman's Message for more information). Our subscription is £100 a year - only about £3 a week!  This can be paid annually or in quarterly instalments and there are reduced rates for seniors (£70) and juniors (£60).</p>
+          <td>
+            <p>If you would like to make a comment, or join us at a concert or fund-raising event, please contact us via email on <a class="a2" href="mailto:socs.webmail@gmail.com">socs.webmail@gmail.com</a></p>
           </td>
         </tr>
       </table>
     </td>
   </tr>
-</table>
+  <tr style="width: 100%;">
+    <td style="width: 500px;">
+      <p-carousel headerText="Cars" [value]="test" circular="circular" numVisible="1" [ngStyle]="{'width' : '500px'}">
+        <ng-template let-article pTemplate="item" style="width: 500px;">
+          {{article}}
+        </ng-template>
+      </p-carousel>
+    </td>
+  </tr>
+</table> -->
+<div style="width: 100%;">
+  <img src="assets/images/banner.jpg" class="image2">
+  <br>
+  <h1 style="text-align:center !important;"><span>SITTINGBOURNE ORPHEUS CHORAL SOCIETY</span></h1>
+  <h3>Welcome to our website</h3>
+  <p>This site is under review and being updated.</p>
+  <p>As audience members who attend our concerts regularly any feedback that you have is appreciated.</p>
+  <p>If you would like to make a comment, or join us at a concert or fund-raising event, please contact us via email on <a class="a2" href="mailto:socs.webmail@gmail.com">socs.webmail@gmail.com</a></p>
+  <p-carousel headerText="Cars" [value]="test" circular="circular" numVisible="1">
+      <ng-template let-article pTemplate="item">
+        {{article}}
+      </ng-template>
+    </p-carousel>
+</div>
